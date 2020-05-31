@@ -9,11 +9,41 @@
 import SwiftUI
 import RealityKit
 
-struct ContentView : View {
+
+struct ARTitleView : View {
+    
+    @EnvironmentObject var gameInfo: GameInfo
+    
     var body: some View {
-        return ARViewContainer().edgesIgnoringSafeArea(.all)
+        
+        let arView = ARViewContainer().edgesIgnoringSafeArea(.all)
+        
+        let view = ZStack {
+            
+            arView
+            
+            VStack(spacing: 200) {
+
+                if gameInfo.gameState == .menu {
+                    Text("ARShooting").font(Font.custom("HelveticaNeue-Bold", size: 60.0))
+
+                }
+
+                Button(action: {
+                    self.gameInfo.gameState = .placingContent
+                }) {
+
+                    if gameInfo.gameState == .menu {
+                        Text("Game Start")
+                    }
+                }
+            }
+        }
+        
+        return view
     }
 }
+
 
 struct ARViewContainer: UIViewRepresentable {
     
@@ -38,7 +68,7 @@ struct ARViewContainer: UIViewRepresentable {
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ARTitleView()
     }
 }
 #endif

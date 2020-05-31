@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		28C690312482749400A683A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C690302482749400A683A4 /* AppDelegate.swift */; };
-		28C690332482749400A683A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C690322482749400A683A4 /* ContentView.swift */; };
+		28C690332482749400A683A4 /* ARTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C690322482749400A683A4 /* ARTitleView.swift */; };
 		28C690352482749400A683A4 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 28C690342482749400A683A4 /* Experience.rcproject */; };
 		28C690372482749700A683A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C690362482749700A683A4 /* Assets.xcassets */; };
 		28C6903A2482749700A683A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C690392482749700A683A4 /* Preview Assets.xcassets */; };
 		28C6903D2482749700A683A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C6903B2482749700A683A4 /* LaunchScreen.storyboard */; };
+		28C690472483599000A683A4 /* GameInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C690462483599000A683A4 /* GameInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		28C6902D2482749400A683A4 /* ARShooting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARShooting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C690302482749400A683A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		28C690322482749400A683A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		28C690322482749400A683A4 /* ARTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARTitleView.swift; sourceTree = "<group>"; };
 		28C690342482749400A683A4 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		28C690362482749700A683A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28C690392482749700A683A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		28C6903C2482749700A683A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28C6903E2482749700A683A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28C690462483599000A683A4 /* GameInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				28C690302482749400A683A4 /* AppDelegate.swift */,
-				28C690322482749400A683A4 /* ContentView.swift */,
+				28C690322482749400A683A4 /* ARTitleView.swift */,
 				28C690342482749400A683A4 /* Experience.rcproject */,
 				28C690362482749700A683A4 /* Assets.xcassets */,
 				28C6903B2482749700A683A4 /* LaunchScreen.storyboard */,
 				28C6903E2482749700A683A4 /* Info.plist */,
 				28C690382482749700A683A4 /* Preview Content */,
+				28C690462483599000A683A4 /* GameInfo.swift */,
 			);
 			path = ARShooting;
 			sourceTree = "<group>";
@@ -146,9 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28C690332482749400A683A4 /* ContentView.swift in Sources */,
+				28C690332482749400A683A4 /* ARTitleView.swift in Sources */,
 				28C690312482749400A683A4 /* AppDelegate.swift in Sources */,
 				28C690352482749400A683A4 /* Experience.rcproject in Sources */,
+				28C690472483599000A683A4 /* GameInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
